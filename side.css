@@ -1,0 +1,420 @@
+body {
+  background: #ebeff2;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.profile-card {
+  display: none;
+}
+
+/* styles.css */
+.profile-card {
+  width: 300px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.profile-card img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: 10px auto;
+  display: block;
+}
+
+.profile-card h2 {
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+.profile-card p {
+  font-size: 14px;
+  color: #555;
+  margin: 5px 0;
+}
+
+.profile-card button {
+  background-color: #ff9933;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin: 10px 5px;
+  cursor: pointer;
+}
+
+.profile-card button.update-button {
+  background-color: #ff9933;
+}
+
+.profile-card button.logout-button {
+  background-color: #ff9933;
+}
+
+.close-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+header {
+  background: #f3f3f3; /* Grey background color */
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+
+.header-content {
+  display: flex;
+  justify-content: flex-end; /* Align content to the right */
+  align-items: center;
+  padding: 10px;
+  max-width: 100%;
+  margin: 0 auto;
+  background: #ebeff2;
+}
+
+/* Notify icon styles (You can adjust as needed) */
+.notify-icon {
+  margin-right: 20px;
+  display: flex;
+  align-items: center;
+  cursor: pointer; /* Add pointer cursor for interaction */
+}
+
+.notify-icon .las {
+  font-size: 24px;
+  color: #333; /* Default icon color */
+}
+
+.notify-icon .notify {
+  background: #f36c33; /* Orange background color for the notification count */
+  color: white; /* Text color for the notification count */
+  border-radius: 50%;
+  padding: 5px 10px;
+  font-size: 12px;
+}
+
+/* User section styles (You can adjust as needed) */
+.user {
+  display: flex;
+  align-items: center;
+  cursor: pointer; /* Add pointer cursor for interaction */
+}
+
+.user .bg-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+  background-size: cover;
+}
+
+.user .las {
+  font-size: 24px;
+  color: #333; /* Default icon color */
+}
+
+/* Styling for the "Logout" text */
+.user span:last-child {
+  font-weight: bold;
+  color: #333; /* Default text color */
+}
+
+.user:hover .las,
+.notify-icon:hover .las {
+  color: #f36c33; /* Orange color on hover */
+}
+
+/* css for the overlay*/
+
+.page-header {
+  padding: 20px;
+  background: #e9edf2;
+  border-bottom: 1px solid #dee2e8;
+}
+
+.page-header h1,
+.page-header small {
+  color: #000;
+}
+
+.icon-image {
+  width: 24px; /* Set the desired width */
+  height: 24px; /* Set the desired height */
+  margin-right: 10px; /* Add space between the image and text */
+  vertical-align: middle; /* Align the image vertically with the text */
+}
+
+.vertical-nav {
+  min-width: 17rem;
+  width: 17rem;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s;
+  overflow-y: auto;
+}
+.page-content {
+  width: calc(100% - 17rem);
+  margin-left: 17rem;
+  transition: all 0.4s;
+}
+
+/* Style the dropdown items */
+.dropdown-container a {
+  background-color: white; /* Set the background color to white */
+  color: black; /* Set the text color to black */
+  transition: none; /* Disable the hover effect */
+}
+
+/* No hover effect for the dropdown items */
+.dropdown-container a:hover {
+  background-color: white; /* Keep the background color white */
+  color: black; /* Keep the text color black */
+}
+
+#sidebar.active {
+  margin-left: -17rem;
+}
+
+#content.active {
+  width: 100%;
+  margin: 0;
+}
+
+.separator {
+  margin: 3rem 0;
+  border-bottom: 1px dashed #fff;
+}
+
+.text-uppercase {
+  letter-spacing: 0.1em;
+}
+.text-gray {
+  color: #aaa;
+}
+.nav-link {
+  text-transform: capitalize;
+}
+.nav-link:hover {
+  background: #f3f2f2;
+}
+.text-primary {
+  color: #7579e7 !important;
+}
+
+/* Add the style for the dropdown container */
+.dropdown-container {
+  display: none;
+  background-color: #000; /* Set the background color to black */
+  padding-left: 8px;
+  color: white; /* Set the text color to white */
+}
+
+/* Style the caret down icon */
+.fa-caret-down {
+  float: right;
+  padding-right: 8px;
+  color: #818181;
+}
+
+/* On click, toggle the dropdown and change the text color */
+.nav-link.dropdown-btn.active + .dropdown-container {
+  display: block;
+  color: white; /* Change to white text */
+}
+
+/*CSS FOR THE PACKAGES START*/
+.card-img-top {
+  height: auto;
+  width: 100%;
+}
+
+.cardy{
+    background:#fff;
+}
+.card {
+  z-index: 1;
+  overflow: hidden;
+  transition: 0.5s;
+}
+.card:hover {
+  color: white;
+}
+.card::before {
+  content: "";
+  position: absolute;
+  left: -100%;
+  top: 0%;
+  background: #f36c33;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+  z-index: -1;
+}
+.card:hover::before {
+  left: 0%;
+  color: white;
+}
+
+/* Add specific styling for each package using IDs */
+
+#gold-package {
+  background-color: #fff;
+  color: #000;
+}
+
+.popular-strip {
+  position: absolute;
+  text-align: center;
+  transform: skewY(-55deg);
+  transform-origin: top left;
+  padding: 0; /* Remove padding to ensure the image covers the entire strip */
+  top: 140px; /* Adjust this value to control the vertical position */
+  left: 0;
+  width: 100%; /* Make it cover the entire card width */
+  z-index: 1;
+  transition: background-color 0.3s;
+  overflow: hidden; /* Ensure the image is within the strip */
+}
+
+.popular-strip img {
+  width: 100%;
+  height: auto;
+  max-width: 100%; /* Ensure the image doesn't exceed its natural size */
+  max-height: 100%; /* Ensure the image doesn't exceed its natural size */
+}
+
+.popular-strip:hover {
+  background-color: transparent;
+}
+
+#my-table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 2px solid #333;
+  background: #fff;
+}
+
+#package.section {
+  margin-bottom: 0; /* Remove the margin at the bottom */
+}
+
+table#my-table.table {
+  margin-bottom: 0; /* Remove the margin at the bottom */
+}
+
+button#previous-btn.btn.btn-primary {
+  background-color: #fff; /* Remove the blue background */
+  padding: 0; /* Set the padding to zero */
+  border-radius: 0;
+  color: #000;
+  background: #fff;
+}
+
+th.line {
+  background: #fff !important;
+}
+
+button#next-btn.btn {
+  background: #fff !important;
+}
+
+button#previous-btn.btn {
+  background: #fff !important;
+}
+
+button#next-btn.btn.btn-primary {
+  background-color: #fff; /* Remove the blue background */
+  padding: 0; /* Set the padding to zero */
+  border-radius: 0;
+  color: #000;
+  background: #fff;
+}
+
+.btn-primary {
+  border-radius: 1px solid #000;
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #777;
+}
+
+th {
+  background-color: #ebeff2;
+  color: #fff;
+  border: 2px solid #333;
+}
+
+th.line {
+  text-align: center;
+  color: #000;
+  border: 1px solid #000;
+  background: #fff !important;
+}
+
+td.line {
+  border-right: 1px solid #777;
+  text-align: center;
+  background: #fff !important;
+}
+
+.show-entries {
+  float: left;
+  margin-right: 10px;
+}
+
+.table-buttons {
+  float: right;
+}
+
+#advertise,
+#Packages {
+  min-height: 100vh;
+}
+/*CSS FOR THE PACKAGES END*/
+@media (max-width: 768px) {
+  #sidebar {
+    margin-left: -17rem;
+  }
+  #sidebar.active {
+    margin-left: 0;
+  }
+  #content {
+    width: 100%;
+    margin: 0;
+  }
+  #content.active {
+    margin-left: 17rem;
+    width: calc(100% - 17rem);
+  }
+
+  
+  .card-container h3{
+      font-size:8px;
+      margin-right:2px;
+      
+  }
+}
+
+#submit input {
+  background: #ebeff2;
+}
+
+#submit .custom-file {
+  background: #ebeff2;
+}
+
