@@ -1094,9 +1094,9 @@ displayUserInformation($conn, $user_name);
 ?>
 
 
-<div style=" margin: 0 8%; align-items: center; padding: 20px; background-color: #ebeff2; overflow: hidden;"  class="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+<div style=" margin: 0 8%; align-items: center; padding: 20px; background-color: #ebeff2; overflow: hidden;"  class="w-full grid grid-cols-1 md:grid-cols-3">
 <!-- Card 1: Deposit Balance -->
-<div style="background-color: #ffffff; border: 1px solid #e0e0e0; overflow: hidden; cursor: pointer; margin-right: 5px; width:33.3%;">
+<div style="background-color: #ffffff; border: 1px solid #e0e0e0; overflow: hidden; cursor: pointer; margin-right: 5px;">
     <div style="padding: 15px; display: flex; align-items: center; text-align: left;">
         <!-- Deposit Section -->
         <div style="display: flex; align-items: flex-start; flex-grow: 1;">
@@ -1124,7 +1124,7 @@ displayUserInformation($conn, $user_name);
 </div>
 
 <!-- Card 2: Deposit Balance -->
-<div style="background-color: #ffffff; border: 1px solid #e0e0e0; overflow: hidden; cursor: pointer; margin-right: 5px; width:33.3%;">
+<div style="background-color: #ffffff; border: 1px solid #e0e0e0; overflow: hidden; cursor: pointer; margin-right: 5px;">
     <div style="padding: 15px; display: flex; align-items: center; text-align: left;">
         <!-- Deposit Section -->
         <div style="display: flex; align-items: flex-start; flex-grow: 1;">
@@ -1153,7 +1153,7 @@ displayUserInformation($conn, $user_name);
 </div>
 
 <!-- Card 3: Deposit Balance -->
-<div style="background-color: #ffffff; border: 1px solid #e0e0e0; overflow: hidden; cursor: pointer; margin-right: 5px; width:33.3%;">
+<div style="background-color: #ffffff; border: 1px solid #e0e0e0; overflow: hidden; cursor: pointer; margin-right: 5px;">
     <div style="padding: 15px; display: flex; align-items: center; text-align: left;">
         <!-- Deposit Section -->
         <div style="display: flex; align-items: flex-start; flex-grow: 1;">
@@ -1181,7 +1181,7 @@ displayUserInformation($conn, $user_name);
     </div>
 </div>
 
-
+</div>
 
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
             integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
