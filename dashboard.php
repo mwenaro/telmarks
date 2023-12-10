@@ -389,7 +389,7 @@ class="flex flex-col md:flex-row justify-center items-center p-20"
 >
 
 <!-- Card 1: Bonus -->
-<div style="background-color: #ffffff; border: 1px solid #e0e0e0; "  class=" h-20 w-full md:w-1/2 lg:w-1/4 justify-between items-center">
+<div style="background-color: #ffffff; border: 1px solid #e0e0e0; "  class=" h-48 w-full md:w-1/2 lg:w-1/4 justify-between items-center p-5">
     <div style="" class ="flex flex-col justify-center items-center ">
     <h3 style="margin: 0; color: black;">Bonus</h3>
         <!-- App Earnings Section -->          
