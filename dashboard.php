@@ -347,7 +347,7 @@ $notifications = $stmt->fetchAll(PDO::FETCH_ASSOC);
 </div>
 
 <!-- tailwind csls -->
-<div class="card-container flex flex-col md:flex-row justify-between items-center  mx-auto w-full" style="margin-right:10%; padding:10px">
+<div class="card-container flex flex-col md:flex-row justify-between items-center  mx-auto w-full flex-wrap" style="margin-right:10%; padding:10px">
     <div class="card-links w-full md:w-1/2 lg:w-1/4 h-24 bg-white rounded-lg flex justify-center items-center mb-4" style=" margin-right:5px;">
         <a href="./deposit.php">
             <div class="card-content">
@@ -385,7 +385,7 @@ $notifications = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
 
 <div style="background-color: #ebeff2; overflow: hidden;"
-class="flex flex-col md:flex-row justify-center items-center p-6"
+class="flex flex-col md:flex-row justify-center items-center p-6 flex-wrap"
 >
 
 <!-- Card 1: Bonus -->
