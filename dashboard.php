@@ -36,7 +36,7 @@ $userName = isset($_SESSION['user_name']) ? $_SESSION['user_name'] : "";
             /* display: flex;
             justify-content: space-between;
             align-items: center; */
-            padding: 20px;
+            /* padding: 20px; */
             background-color: #ebeff2; /* Grey background */
             overflow: hidden;
         }
@@ -48,7 +48,7 @@ $userName = isset($_SESSION['user_name']) ? $_SESSION['user_name'] : "";
             overflow: hidden;
             transition: transform 0.3s ease-in-out;
             cursor: pointer;
-            padding:20px;
+            /* padding:20px; */
             color:#000;
         }
         .card-links:hover {
@@ -458,7 +458,7 @@ $notifications = $stmt->fetchAll(PDO::FETCH_ASSOC);
 </div>
 
 <!-- tailwind csls -->
-<div class="card-container flex flex-col md:flex justify-between items-center" style="margin-right:10%; ">
+<div class="card-container flex flex-col md:flex-row justify-between items-center" style="margin-right:10%; ">
     <div class="card-links w-full md:w-1/2 lg:w-1/4" style=" margin-right:5px;">
         <a href="./deposit.php">
             <div class="card-content">
