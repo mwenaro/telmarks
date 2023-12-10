@@ -348,7 +348,7 @@ $notifications = $stmt->fetchAll(PDO::FETCH_ASSOC);
 <!-- card-container flex flex-col md:flex-row justify-between items-center  mx-auto w-full flex-wrap -->
 <!-- w-full md:w-1/2 lg:w-1/4 -->
 <!-- tailwind csls -->
-<div class="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-between gap-4" style="margin-right:10%; padding:10px">
+<div class="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-between gap-2" style="margin-right:10%; padding:10px">
     <div class="card-links  h-24 bg-white rounded-lg flex justify-center items-center mb-4" style=" margin-right:5px;">
         <a href="./deposit.php">
             <div class="card-content">
@@ -386,11 +386,11 @@ $notifications = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
 
 <div style="background-color: #ebeff2; overflow: hidden;"
-class="flex flex-col md:flex-row justify-center items-center p-6 flex-wrap"
+class="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-between gap-2"
 >
 
 <!-- Card 1: Bonus -->
-<div style="background-color: #ffffff; border: 1px solid #e0e0e0; "  class="min-h-fit h-48 w-full md:w-1/2 lg:w-1/4 justify-between items-center p-3 md:p-5 flex-col gap-2 mt-3 md:mt-2">
+<div style="background-color: #ffffff; border: 1px solid #e0e0e0; "  class="min-h-fit h-48  justify-between items-center p-3 md:p-5 flex-col gap-2 mt-3 md:mt-2">
     
     <h3 style="margin: 0; color: black;" class="w-full px-6 py-1 my-2 text-2xl text-center font-bold">Bonus</h3>
         <!-- App Earnings Section -->          
@@ -458,7 +458,7 @@ echo '
 <!-- //End of card 1  -->
 
 <!-- Card 2: Withdrawn -->
-<div style="background-color: #ffffff; border: 1px solid #e0e0e0; "  class="min-h-fit h-48 w-full md:w-1/2 lg:w-1/4 justify-between items-center p-3 md:p-5 flex-col gap-2 mt-3 md:mt-2">
+<div style="background-color: #ffffff; border: 1px solid #e0e0e0; "  class="min-h-fit h-48  justify-between items-center p-3 md:p-5 flex-col gap-2 mt-3 md:mt-2">
     
     <h3 style="margin: 0; color: black;" class="w-full px-6 py-1 my-2 text-2xl text-center font-bold">Withdrawn</h3>
         <!-- Withdrawal Earnings Section -->
@@ -522,7 +522,7 @@ echo '
 </div>
 
 <!-- Card 3: Package -->
-<div style="background-color: #ffffff; border: 1px solid #e0e0e0; "  class="min-h-fit h-48 w-full md:w-1/2 lg:w-1/4 justify-between items-center p-3 md:p-5 flex-col gap-2 mt-3 md:mt-2">
+<div style="background-color: #ffffff; border: 1px solid #e0e0e0; "  class="min-h-fit h-48  justify-between items-center p-3 md:p-5 flex-col gap-2 mt-3 md:mt-2">
 <h3 style="margin: 0; color: black;" class="w-full px-6 py-1 my-2 text-2xl text-center font-bold">Package</h3>
 
         <!-- App Earnings Section -->
@@ -591,7 +591,7 @@ echo '
 
 
 <!-- Card 4: App Earnings -->
-<div style="background-color: #ffffff; border: 1px solid #e0e0e0; "  class="min-h-fit h-48 w-full md:w-1/2 lg:w-1/4 justify-between items-center p-3 md:p-5 flex-col gap-2 mt-3 md:mt-2">
+<div style="background-color: #ffffff; border: 1px solid #e0e0e0; "  class="min-h-fit h-48  justify-between items-center p-3 md:p-5 flex-col gap-2 mt-3 md:mt-2">
 
 <?php
 // Start the session
