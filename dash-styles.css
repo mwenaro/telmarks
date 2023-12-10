@@ -1,0 +1,123 @@
+.card-container {
+    margin-inline: auto;
+    background-color: #ebeff2;
+    /* Grey background */
+    overflow: hidden;
+}
+
+.card-links {
+    background-color: #ffffff;
+    /* White background */
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+    /* padding:20px; */
+    color: #000;
+}
+
+.card-links:hover {
+    transform: scale(1.05);
+}
+
+.card-links-content {
+    padding: 15px;
+    text-align: center;
+}
+
+.card-links-content h3 {
+    margin: 0;
+    /* Remove default margin for h3 */
+    color: black;
+    /* Change text color to black */
+}
+
+.card-links a {
+    text-decoration: none;
+    color: #000;
+}
+
+.bg-img {
+    width: 150px;
+    /* Set your desired width */
+    height: 150px;
+    /* Set your desired height */
+    border-radius: 50%;
+    /* Make it round */
+    overflow: hidden;
+    margin: 0 auto;
+    /* Center the container */
+}
+
+/* Style for the profile image */
+.bg-img img {
+    width: 20px;
+    height: 20px;
+    width: 100%;
+    /* Make the image fill the container */
+    border-radius: 50%;
+    /* Make it round */
+    border: 2px solid #fff;
+    /* Optional: Add a white border */
+}
+
+/* Style for the abbreviation */
+.abbreviation {
+    font-size: 24px;
+    /* Set your desired font size */
+    font-weight: bold;
+    color: #fff;
+    /* Set your desired text color */
+}
+
+
+/* Default styles for larger screens */
+.vertical-nav .nav-link {
+    display: flex;
+    align-items: center;
+}
+
+/* Styles for small screens (mobile) */
+@media (max-width: 768px) {
+    .vertical-nav .nav-link {
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
+
+    .vertical-nav .nav-link img {
+        margin-right: 0;
+        /* Remove margin for the image */
+        margin-bottom: 5px;
+        /* Add some spacing between images */
+    }
+
+    .vertical-nav p {
+        display: none;
+        /* Hide the paragraphs in mobile view */
+    }
+}
+
+/* Custom CSS for Card-Links */
+.card-links {
+    margin-bottom: 20px;
+    /* Adjust the margin as needed */
+}
+
+/* Mobile responsiveness */
+@media (max-width: 767px) {
+    .card-links {
+
+        margin-right: 0;
+    }
+}
+
+/* Clear Bootstrap card deck margin on mobile */
+@media (max-width: 576px) {
+    .card-deck {
+        margin-right: 0;
+    }
+
+
+}
