@@ -38,50 +38,50 @@ $userName = isset($_SESSION['user_name']) ? $_SESSION['user_name'] : "";
 <body>
     
     <?php
-// Start a session (if not started already)
-session_start();
+    // Start a session (if not started already)
+    session_start();
 
-// Database connection details
-$servername = "localhost";
-$username = "telmarka_db";
-$password = "Benbrian@01";
-$dbname = "telmarka_db";
+    // Database connection details
+    $servername = "localhost";
+    $username = "telmarka_db";
+    $password = "Benbrian@01";
+    $dbname = "telmarka_db";
 
-// Create a database connection
-$conn = new mysqli($servername, $username, $password, $dbname);
+    // Create a database connection
+    $conn = new mysqli($servername, $username, $password, $dbname);
 
-// Check the connection
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-}
-
-// Initialize variables
-$profileImage = "";
-$abbreviation = "";
-
-// Check if the session variable is set and not empty
-if (isset($_SESSION['user_name']) && !empty($_SESSION['user_name'])) {
-    $sessionUsername = $_SESSION['user_name'];
-
-    // Retrieve profile image and username from Users table
-    $sql = "SELECT profile_image FROM Users WHERE username = ?";
-    $stmt = $conn->prepare($sql);
-    $stmt->bind_param("s", $sessionUsername);
-
-    if ($stmt->execute()) {
-        $stmt->bind_result($profileImage);
-        $stmt->fetch();
+    // Check the connection
+    if ($conn->connect_error) {
+        die("Connection failed: " . $conn->connect_error);
     }
 
-    $stmt->close();
-    
-    // Generate abbreviation from username
-    $abbreviation = strtoupper(substr($sessionUsername, 0, 2));
-}
+    // Initialize variables
+    $profileImage = "";
+    $abbreviation = "";
 
-// Default background image if profile image is not available
-$bgImage = "img/1.jpeg";
-?>
+    // Check if the session variable is set and not empty
+    if (isset($_SESSION['user_name']) && !empty($_SESSION['user_name'])) {
+        $sessionUsername = $_SESSION['user_name'];
+
+        // Retrieve profile image and username from Users table
+        $sql = "SELECT profile_image FROM Users WHERE username = ?";
+        $stmt = $conn->prepare($sql);
+        $stmt->bind_param("s", $sessionUsername);
+
+        if ($stmt->execute()) {
+            $stmt->bind_result($profileImage);
+            $stmt->fetch();
+        }
+
+        $stmt->close();
+
+        // Generate abbreviation from username
+        $abbreviation = strtoupper(substr($sessionUsername, 0, 2));
+    }
+
+    // Default background image if profile image is not available
+    $bgImage = "img/1.jpeg";
+    ?>
     <header>
         <div class="header-content">
             <div class="notify-icon" id="notificationIcon">
@@ -92,23 +92,23 @@ $bgImage = "img/1.jpeg";
             <!-- Modal to display offer message -->
             <div id="offerModal" class="modal" style="display: none; text-align: center;">
                 <?php if (!empty($notifications)): ?>
-                    <div class="modal-dialog">
-                        <div class="modal-content" style="
+                        <div class="modal-dialog">
+                            <div class="modal-content" style="
                             background-color: #f36c33;
                             color: white;
                             margin: 20px;
                             padding: 10px;
                             position: relative;
                         ">
-                            <div class="modal-body">
-                                <p><?php echo htmlspecialchars($notifications[0]['message']); ?></p>
-                            </div>
-                            <!-- Close icon -->
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" onclick="closeOfferModal()">Close</button>
+                                <div class="modal-body">
+                                    <p><?php echo htmlspecialchars($notifications[0]['message']); ?></p>
+                                </div>
+                                <!-- Close icon -->
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" onclick="closeOfferModal()">Close</button>
+                                </div>
                             </div>
                         </div>
-                    </div>
                 <?php endif; ?>
             </div>
 
@@ -118,7 +118,7 @@ $bgImage = "img/1.jpeg";
                 <div class="bg-img" style="background-image: url(<?php echo empty($profileImage) ? $bgImage : 'none'; ?>); position: relative; hover{background-color:orange; cursor:pointer;}">
                     <img src="<?php echo empty($profileImage) ? 'default-image.jpg' : $profileImage; ?>" alt="Profile Image" style="width:40px; height:40px; border-radius: 50%;">
                     <?php if (empty($profileImage)): ?>
-                        <div class="abbreviation" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);"><?php echo $abbreviation; ?></div>
+                            <div class="abbreviation" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);"><?php echo $abbreviation; ?></div>
                     <?php endif; ?>
                 </div>
                                 
@@ -332,9 +332,9 @@ $notifications = $stmt->fetchAll(PDO::FETCH_ASSOC);
     position: relative;  /* Add position relative for absolute positioning */
 ">
     <?php foreach ($notifications as $notification): ?>
-        <p>
-            <?php echo htmlspecialchars($notification['message']); ?>
-        </p>
+            <p>
+                <?php echo htmlspecialchars($notification['message']); ?>
+            </p>
     <?php endforeach; ?>
 
     <!-- Close icon -->
@@ -389,7 +389,7 @@ class="flex flex-col md:flex-row justify-center items-center p-20"
 >
 
 <!-- Card 1: Bonus -->
-<div style="background-color: #ffffff; border: 1px solid #e0e0e0; "  class="h-36 md:h-48 w-full md:w-1/2 lg:w-1/4 justify-between items-center p-3 md:p-5 flex-col gap-2 mt-3 md:mt-2">
+<div style="background-color: #ffffff; border: 1px solid #e0e0e0; "  class="min-h-fit h-36 md:h-48 w-full md:w-1/2 lg:w-1/4 justify-between items-center p-3 md:p-5 flex-col gap-2 mt-3 md:mt-2">
     
     <h3 style="margin: 0; color: black;" class="w-full px-6 py-1 my-2 text-2xl text-center font-bold">Bonus</h3>
         <!-- App Earnings Section -->          
@@ -457,108 +457,103 @@ echo '
 <!-- //End of card 1  -->
 
 <!-- Card 2: Withdrawn -->
-<div style="background-color: #ffffff; border: 1px solid #e0e0e0; "  class="h-36 md:h-48 w-full md:w-1/2 lg:w-1/4 justify-between items-center p-3 md:p-5 flex-col gap-2 mt-3 md:mt-2">
-    <div style="padding: 15px; display: flex; align-items: center; text-align: center;">
-
+<div style="background-color: #ffffff; border: 1px solid #e0e0e0; "  class="min-h-fit h-36 md:h-48 w-full md:w-1/2 lg:w-1/4 justify-between items-center p-3 md:p-5 flex-col gap-2 mt-3 md:mt-2">
+    
+    <h3 style="margin: 0; color: black;" class="w-full px-6 py-1 my-2 text-2xl text-center font-bold">Withdrawn</h3>
         <!-- Withdrawal Earnings Section -->
         <?php
         // Assuming you have already started the session
         session_start();
-        
+
         // Initialize default values
         $withdrawnAmount = 0;
-        
+
         // Check if the user is logged in
         if (isset($_SESSION['user_name'])) {
             $loggedInUser = $_SESSION['user_name'];
-        
+
             // Database connection details (replace with your actual connection details)
             $dbHost = "localhost";
             $dbUser = "telmarka_db";
             $dbPassword = "Benbrian@01";
             $dbName = "telmarka_db";
-        
+
             // Create a database connection
             $conn = new mysqli($dbHost, $dbUser, $dbPassword, $dbName);
-        
+
             if ($conn->connect_error) {
                 die("Connection failed: " . $conn->connect_error);
             }
-        
+
             // Fetch the sum of 'points_to_withdraw' for the specified user
             $query = "SELECT SUM(points_to_withdraw) AS totalWithdrawn FROM WithdrawalRequests WHERE username = '$loggedInUser'";
             $result = $conn->query($query);
-        
+
             if ($result->num_rows > 0) {
                 $withdrawnData = $result->fetch_assoc();
                 $withdrawnAmount = $withdrawnData['totalWithdrawn'];
             }
-        
+
             // Close the database connection
             $conn->close();
         }
-        
+
+
         // Display the div with the determined withdrawn amount
         echo '
-        <div style="flex-grow: 1; text-align: center;">
-            <!-- Withdrawn Status -->
-            <h3 style="margin: 0; color: black;">Withdrawn</h3>
-            <br>
-            <div style="display: flex; flex-direction: column; align-items: start;">
-                <p style="margin: 0;">KES ' . $withdrawnAmount . '</p> 
-                <br>
-                <p style="margin: 0;">75%</p> 
-            </div>
-        </div>';
+<div style="" class ="w-full flex justify-between px-4 py-1 gap-3">
+    <p style="margin: 0;">KES ' . $withdrawnAmount . '</p> 
+    <img src="./logos/withdrawn.png" alt="amount" style="width: 20px; height: 20px; margin-bottom: 5px;">
+   
+</div>
+<div style="" class ="w-full flex justify-between px-4 py-1 gap-3">
+<p style="margin: 0;">75%</p> 
+img src="./logos/withdrawnicon.png" alt="amount" style="width: 20px; height: 20px;">
+    
+    
+</div> 
+    ';
         ?>
 
+  
+ 
 
-
-        <!-- Icon Section -->
-        <div style="display: flex; align-items: end; flex-direction: column;">
-            <br> <br> 
-            <img src="./logos/withdrawn.png" alt="amount" style="width: 20px; height: 20px; margin-bottom: 5px;">
-            <br>
-            <img src="./logos/withdrawnicon.png" alt="amount" style="width: 20px; height: 20px;">
-        </div>
-
-    </div>
 </div>
 
 <!-- Card 3: Package -->
-<div style="background-color: #ffffff; border: 1px solid #e0e0e0; "  class="h-36 md:h-48 w-full md:w-1/2 lg:w-1/4 justify-between items-center p-3 md:p-5 flex-col gap-2 mt-3 md:mt-2">
+<div style="background-color: #ffffff; border: 1px solid #e0e0e0; "  class="min-h-fit h-36 md:h-48 w-full md:w-1/2 lg:w-1/4 justify-between items-center p-3 md:p-5 flex-col gap-2 mt-3 md:mt-2">
     <div style="" class="">
 
         <!-- App Earnings Section -->
         <?php
         // Assuming you have already started the session
         session_start();
-        
+
         // Initialize default values
         $status = 'Inactive';
         $packageName = 'N/A';
-        
+
         // Check if the user is logged in
         if (isset($_SESSION['user_name'])) {
             $loggedInUser = $_SESSION['user_name'];
-        
+
             // Database connection details (replace with your actual connection details)
             $dbHost = "localhost";
             $dbUser = "telmarka_db";
             $dbPassword = "Benbrian@01";
             $dbName = "telmarka_db";
-        
+
             // Create a database connection
             $conn = new mysqli($dbHost, $dbUser, $dbPassword, $dbName);
-        
+
             if ($conn->connect_error) {
                 die("Connection failed: " . $conn->connect_error);
             }
-        
+
             // Fetch the last entry in the 'name' column for the specified user
             $query = "SELECT name FROM Packages WHERE username = '$loggedInUser' ORDER BY id DESC LIMIT 1";
             $result = $conn->query($query);
-        
+
             if ($result->num_rows > 0) {
                 $lastPackage = $result->fetch_assoc();
                 $packageName = $lastPackage['name'];
@@ -567,11 +562,11 @@ echo '
                 // Handle the case where the user is not in the Packages table
                 $status = 'Inactive';
             }
-        
+
             // Close the database connection
             $conn->close();
         }
-        
+
         // Display the div with the determined status and last package name
         echo '
         <div style="display: flex; align-items: flex-start; flex-grow: 1;">
@@ -604,7 +599,7 @@ echo '
 
 
 <!-- Card 4: App Earnings -->
-<div style="background-color: #ffffff; border: 1px solid #e0e0e0; "  class="h-36 md:h-48 w-full md:w-1/2 lg:w-1/4 justify-between items-center p-3 md:p-5 flex-col gap-2 mt-3 md:mt-2">
+<div style="background-color: #ffffff; border: 1px solid #e0e0e0; "  class="min-h-fit h-36 md:h-48 w-full md:w-1/2 lg:w-1/4 justify-between items-center p-3 md:p-5 flex-col gap-2 mt-3 md:mt-2">
     <div style="padding: 15px; display: flex; align-items: center; text-align: center;">
 <?php
 // Start the session
@@ -804,50 +799,50 @@ $conn->close();
         <?php
         // Assuming you have already started the session
         session_start();
-        
+
         // Check if the user is logged in
         if (isset($_SESSION['user_name'])) {
             $loggedInUser = $_SESSION['user_name'];
-        
+
             // Database connection details (replace with your actual connection details)
             $dbHost = "localhost";
             $dbUser = "telmarka_db";
             $dbPassword = "Benbrian@01";
             $dbName = "telmarka_db";
-        
+
             // Create a database connection
             $conn = new mysqli($dbHost, $dbUser, $dbPassword, $dbName);
-        
+
             if ($conn->connect_error) {
                 die("Connection failed: " . $conn->connect_error);
             }
-        
+
             // Fetch 'name' column values from the Packages table
             $query = "SELECT name FROM Packages WHERE username = '$loggedInUser'";
             $result = $conn->query($query);
-        
+
             if ($result->num_rows > 0) {
                 // 'name' column values found in the Packages table
                 $nameValues = [];
-        
+
                 while ($row = $result->fetch_assoc()) {
                     $nameValues[] = $row['name'];
                 }
-        
+
                 // Check if 'Advertise' is present in any 'name' column value
                 $status = in_array('Advertise', $nameValues) ? 'Active' : 'Inactive';
             } else {
                 // Handle the case where the user is not in the Packages table
                 $status = 'Inactive';
             }
-        
+
             // Close the database connection
             $conn->close();
         } else {
             // Handle the case where the user is not logged in
             $status = 'Log In';
         }
-        
+
         // Display the div with the determined status
         echo '
         <div style="display: flex; align-items: flex-start; flex-grow: 1;">
@@ -955,7 +950,7 @@ if ($verifyStmt) {
             updateDepositBalance($conn, $user_name);
 
         } else {
-            
+
         }
     } else {
         echo "Error in verification SQL query: " . mysqli_error($conn);
