@@ -389,7 +389,7 @@ class="flex flex-col md:flex-row justify-center items-center p-20"
 >
 
 <!-- Card 1: Bonus -->
-<div style="background-color: #ffffff; border: 1px solid #e0e0e0; "  class="min-h-fit h-36 md:h-48 w-full md:w-1/2 lg:w-1/4 justify-between items-center p-3 md:p-5 flex-col gap-2 mt-3 md:mt-2">
+<div style="background-color: #ffffff; border: 1px solid #e0e0e0; "  class="min-h-fit h-48 w-full md:w-1/2 lg:w-1/4 justify-between items-center p-3 md:p-5 flex-col gap-2 mt-3 md:mt-2">
     
     <h3 style="margin: 0; color: black;" class="w-full px-6 py-1 my-2 text-2xl text-center font-bold">Bonus</h3>
         <!-- App Earnings Section -->          
@@ -457,7 +457,7 @@ echo '
 <!-- //End of card 1  -->
 
 <!-- Card 2: Withdrawn -->
-<div style="background-color: #ffffff; border: 1px solid #e0e0e0; "  class="min-h-fit h-36 md:h-48 w-full md:w-1/2 lg:w-1/4 justify-between items-center p-3 md:p-5 flex-col gap-2 mt-3 md:mt-2">
+<div style="background-color: #ffffff; border: 1px solid #e0e0e0; "  class="min-h-fit h-48 w-full md:w-1/2 lg:w-1/4 justify-between items-center p-3 md:p-5 flex-col gap-2 mt-3 md:mt-2">
     
     <h3 style="margin: 0; color: black;" class="w-full px-6 py-1 my-2 text-2xl text-center font-bold">Withdrawn</h3>
         <!-- Withdrawal Earnings Section -->
@@ -508,7 +508,7 @@ echo '
 </div>
 <div style="" class ="w-full flex justify-between px-4 py-1 gap-3">
 <p style="margin: 0;">75%</p> 
-img src="./logos/withdrawnicon.png" alt="amount" style="width: 20px; height: 20px;">
+<img src="./logos/withdrawnicon.png" alt="amount" style="width: 20px; height: 20px;">
     
     
 </div> 
@@ -521,7 +521,7 @@ img src="./logos/withdrawnicon.png" alt="amount" style="width: 20px; height: 20p
 </div>
 
 <!-- Card 3: Package -->
-<div style="background-color: #ffffff; border: 1px solid #e0e0e0; "  class="min-h-fit h-36 md:h-48 w-full md:w-1/2 lg:w-1/4 justify-between items-center p-3 md:p-5 flex-col gap-2 mt-3 md:mt-2">
+<div style="background-color: #ffffff; border: 1px solid #e0e0e0; "  class="min-h-fit h-48 w-full md:w-1/2 lg:w-1/4 justify-between items-center p-3 md:p-5 flex-col gap-2 mt-3 md:mt-2">
     <div style="" class="">
 
         <!-- App Earnings Section -->
@@ -599,7 +599,7 @@ img src="./logos/withdrawnicon.png" alt="amount" style="width: 20px; height: 20p
 
 
 <!-- Card 4: App Earnings -->
-<div style="background-color: #ffffff; border: 1px solid #e0e0e0; "  class="min-h-fit h-36 md:h-48 w-full md:w-1/2 lg:w-1/4 justify-between items-center p-3 md:p-5 flex-col gap-2 mt-3 md:mt-2">
+<div style="background-color: #ffffff; border: 1px solid #e0e0e0; "  class="min-h-fit h-48 w-full md:w-1/2 lg:w-1/4 justify-between items-center p-3 md:p-5 flex-col gap-2 mt-3 md:mt-2">
     <div style="padding: 15px; display: flex; align-items: center; text-align: center;">
 <?php
 // Start the session
