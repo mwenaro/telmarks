@@ -384,11 +384,13 @@ $notifications = $stmt->fetchAll(PDO::FETCH_ASSOC);
 <div id="error-message"></div>
 
 
-<div style="display: flex; justify-content: space-between; align-items: center; padding: 20px; background-color: #ebeff2; overflow: hidden;">
+<div style="background-color: #ebeff2; overflow: hidden;"
+class="flex flex-col md:flex-row justify-center items-center p-20"
+>
 
 <!-- Card 1: Bonus -->
-<div style="background-color: #ffffff; border: 1px solid #e0e0e0; overflow: hidden; cursor: pointer; margin-right:5px; width:25%;">
-    <div style="padding: 15px; display: flex; align-items: center; text-align: center;">
+<div style="background-color: #ffffff; border: 1px solid #e0e0e0; "  class=" h-20 w-full md:w-1/2">
+    <div style="" class ="flex justify-center items-center ">
 
         <!-- App Earnings Section -->
         <div style="flex-grow: 1; text-align: center;">
@@ -454,7 +456,8 @@ echo '
         </div>
 
     </div>
-</div>
+</div> 
+<!-- //End of card 1  -->
 
 <!-- Card 2: Withdrawn -->
 <div style="background-color: #ffffff; border: 1px solid #e0e0e0; overflow: hidden; cursor: pointer; margin-right: 5px; width:25%;">
