@@ -389,13 +389,11 @@ class="flex flex-col md:flex-row justify-center items-center p-20"
 >
 
 <!-- Card 1: Bonus -->
-<div style="background-color: #ffffff; border: 1px solid #e0e0e0; "  class=" h-20 w-full md:w-1/2">
-    <div style="" class ="flex justify-center items-center ">
-
-        <!-- App Earnings Section -->
-        <div style="flex-grow: 1; text-align: center;">
-            <h3 style="margin: 0; color: black;">Bonus</h3>
-            <br>
+<div style="background-color: #ffffff; border: 1px solid #e0e0e0; "  class=" h-20 w-full md:w-1/2 lg:w-1/4 justify-between items-center">
+    <div style="" class ="flex flex-col justify-center items-center ">
+    <h3 style="margin: 0; color: black;">Bonus</h3>
+        <!-- App Earnings Section -->          
+            
             
 <?php
 // Start the session
@@ -435,25 +433,24 @@ if (isset($_SESSION['user_name'])) {
 
 // Display the div with the total bonus amount
 echo '
-<div style="display: flex; flex-direction: column; align-items: start;">
+<div style="" class ="flex justify-between">
     <p style="margin: 0;">KES ' . $bonusAmount . '</p> 
-    <br>
+    <img src="./logos/icon.png" alt="amount" style="width: 20px; height: 20px; margin-bottom: 5px;">
+   
+</div>
+<div style="" class ="flex justify-between">
+<p style="margin: 0;">15%</p> 
+    <img src="./logos/bonus.png" alt="amount" style="width: 20px; height: 20px;">
+    
     <p style="margin: 0;">15%</p> 
-</div>';
+</div>
+
+';
 ?>
 
 
-
-
-        </div>
-
-        <!-- Icon Section -->
-        <div style="display: flex; align-items: end; flex-direction: column;">
-            <br> <br> 
-            <img src="./logos/icon.png" alt="amount" style="width: 20px; height: 20px; margin-bottom: 5px;">
-            <br>
-            <img src="./logos/bonus.png" alt="amount" style="width: 20px; height: 20px;">
-        </div>
+            
+      
 
     </div>
 </div> 
