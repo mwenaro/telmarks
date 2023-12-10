@@ -33,10 +33,10 @@ $userName = isset($_SESSION['user_name']) ? $_SESSION['user_name'] : "";
     <link rel="stylesheet" href="side.css" />
     <style>
         .card-container {
-            display: flex;
+            /* display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 20px;
+            padding: 20px; */
             background-color: #ebeff2; /* Grey background */
             overflow: hidden;
         }
@@ -455,7 +455,7 @@ $notifications = $stmt->fetchAll(PDO::FETCH_ASSOC);
     " onclick="closeMessage()">✖</span>
 </div>
 
-
+<!-- tailwind csls -->
 <div class="card-container flex flex-col md:flex justify-between items-center" style="margin-right:10%; ">
     <div class="card-links " style=" margin-right:5px;">
         <a href="./deposit.php">
