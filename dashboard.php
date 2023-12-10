@@ -697,8 +697,8 @@ echo '
 <!-- <div style="display: flex; justify-content: space-between; align-items: center; padding: 20px; background-color: #ebeff2; overflow: hidden;"> -->
 <div class="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-between gap-2" style="margin-right:10%; padding:10px">
 <!-- Card 1: Deposit Balance -->
-<div style="background-color: #ffffff; border: 1px solid #e0e0e0; overflow: hidden; cursor: pointer; margin-right: 5px;">
-    <div style="padding: 15px; display: flex; align-items: center; text-align: left;">
+<div style="background-color: #ffffff; border: 1px solid #e0e0e0; overflow: hidden; cursor: pointer; margin-right: 5px;" >
+    <div style="padding: 15px; display: flex; align-items: center; text-align: left;" class="w-full" >
         <!-- Deposit Section -->
         <div style="display: flex; align-items: flex-start; flex-grow: 1; width:25%;">
             <!-- Deposit Balance -->
@@ -725,7 +725,7 @@ echo '
 </div>
 
 <!-- Card 2: Deposit Balance -->
-<div style="background-color: #ffffff; border: 1px solid #e0e0e0; overflow: hidden; cursor: pointer; margin-right: 5px; width:25%;">
+<div style="background-color: #ffffff; border: 1px solid #e0e0e0; overflow: hidden; cursor: pointer; margin-right: 5px;">
     <div style="padding: 15px; display: flex; align-items: center; text-align: left;">
         <!-- Deposit Section -->
         <div style="display: flex; align-items: flex-start; flex-grow: 1;">
@@ -791,7 +791,7 @@ $conn->close();
 </div>
 
 <!-- Card 3: Deposit Balance -->
-<div style="background-color: #ffffff; border: 1px solid #e0e0e0; overflow: hidden; cursor: pointer; margin-right: 5px; width:25%;">
+<div style="background-color: #ffffff; border: 1px solid #e0e0e0; overflow: hidden; cursor: pointer; margin-right: 5px; ">
     <div style="padding: 15px; display: flex; align-items: center; text-align: left;">
         <!-- Deposit Section -->
         <?php
@@ -872,7 +872,7 @@ $conn->close();
 </div>
 
 <!-- Card 4: Deposit Balance -->
-<div style="background-color: #ffffff; border: 1px solid #e0e0e0; overflow: hidden; cursor: pointer; margin-right: 5px; width:25%;">
+<div style="background-color: #ffffff; border: 1px solid #e0e0e0; overflow: hidden; cursor: pointer; margin-right: 5px;">
     <div style="padding: 15px; display: flex; align-items: center; text-align: left;">
         <!-- Deposit Section -->
         <div style="display: flex; align-items: flex-start; flex-grow: 1;">
