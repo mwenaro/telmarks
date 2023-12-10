@@ -347,6 +347,8 @@ $notifications = $stmt->fetchAll(PDO::FETCH_ASSOC);
 </div>
 <!-- card-container flex flex-col md:flex-row justify-between items-center  mx-auto w-full flex-wrap -->
 <!-- w-full md:w-1/2 lg:w-1/4 -->
+
+
 <!-- tailwind csls -->
 <div class="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-between gap-2" style="margin-right:10%; padding:10px">
     <div class="card-links  h-24 bg-white rounded-lg flex justify-center items-center mb-4" style=" margin-right:5px;">
@@ -674,7 +676,7 @@ echo '
 
 
 <!-- Pictures -->
-<div style="  background-color: #ebeff2; overflow: hidden;" class="grid grid-cols-1 md:grid-cols-3 w-full p-8 gap-3">
+<div style="  background-color: #ebeff2; overflow: hidden;" class="grid grid-cols-1 md:grid-cols-3 w-full p-3 gap-3">
     <!-- Card 5: Image Only -->
     <div style="background-color: #ffffff; border: 1px solid #e0e0e0; border-radius: 8px; overflow: hidden; cursor: pointer; margin-right: 5px; ">
         <img src="./logos/forexphoto.jpg" alt="Image 1" style="width: 100%; height: 250px; border-bottom: 1px solid #e0e0e0;">
@@ -691,7 +693,9 @@ echo '
     </div>
 </div>
 
-<div style="display: flex; justify-content: space-between; align-items: center; padding: 20px; background-color: #ebeff2; overflow: hidden;">
+<!-- other cards -->
+<!-- <div style="display: flex; justify-content: space-between; align-items: center; padding: 20px; background-color: #ebeff2; overflow: hidden;"> -->
+<div class="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-between gap-2" style="margin-right:10%; padding:10px">
 <!-- Card 1: Deposit Balance -->
 <div style="background-color: #ffffff; border: 1px solid #e0e0e0; overflow: hidden; cursor: pointer; margin-right: 5px;">
     <div style="padding: 15px; display: flex; align-items: center; text-align: left;">
