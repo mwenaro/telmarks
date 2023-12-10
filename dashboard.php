@@ -1043,7 +1043,7 @@ function displayUserInformation($conn, $username)
 
         $referralLink = generateReferralLink($myUsername);
 
-        echo '<div id="content-wrapp" style="background: #fff; padding: 40px; margin: 0 10%; width: 80%;">
+        echo '<div id="content-wrapp" style="background: #fff; padding: 40px; margin: 0 10%; "  class="mx-6">
                 <h1 class="text-center">User Information</h1>
 
                 <form class="form-inline" id="my-form">
