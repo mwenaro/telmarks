@@ -141,6 +141,7 @@ $userName = isset($_SESSION['user_name']) ? $_SESSION['user_name'] : "";
 
 
     </style>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body>
@@ -417,7 +418,7 @@ $bgImage = "img/1.jpeg";
 
 
 <div class="page-header">
-    <h1>Dashboard</h1>
+    <h1 class="text-red-800">Dashboard</h1>
     <small>Hello, <?php echo $userName; ?></small>
 </div>
 
