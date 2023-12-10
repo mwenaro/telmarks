@@ -33,9 +33,9 @@ $userName = isset($_SESSION['user_name']) ? $_SESSION['user_name'] : "";
     <link rel="stylesheet" href="side.css" />
     <style>
         .card-container {
-            display: flex;
+            /* display: flex;
             justify-content: space-between;
-            align-items: center;
+            align-items: center; */
             padding: 20px;
             background-color: #ebeff2; /* Grey background */
             overflow: hidden;
@@ -50,7 +50,7 @@ $userName = isset($_SESSION['user_name']) ? $_SESSION['user_name'] : "";
             cursor: pointer;
             padding:20px;
             color:#000;
-
+        }
         .card-links:hover {
             transform: scale(1.05);
         }
@@ -127,7 +127,7 @@ $userName = isset($_SESSION['user_name']) ? $_SESSION['user_name'] : "";
 /* Mobile responsiveness */
 @media (max-width: 767px) {
     .card-links {
-        width: 100%;
+        
         margin-right: 0;
     }
 }
@@ -138,9 +138,7 @@ $userName = isset($_SESSION['user_name']) ? $_SESSION['user_name'] : "";
         margin-right: 0;
     }
 
-    .card-container{
-        flex-direction:column;
-    }
+    
 }
 
 
