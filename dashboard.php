@@ -456,7 +456,7 @@ $notifications = $stmt->fetchAll(PDO::FETCH_ASSOC);
 </div>
 
 
-<div class="card-container " style="margin-right:10%; ">
+<div class="card-container flex flex-col md:flex justify-between items-center" style="margin-right:10%; ">
     <div class="card-links " style=" margin-right:5px;">
         <a href="./deposit.php">
             <div class="card-content">
