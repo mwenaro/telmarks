@@ -1094,7 +1094,7 @@ displayUserInformation($conn, $user_name);
 ?>
 
 
-<div style="display: flex; margin: 0 8%; align-items: center; padding: 20px; background-color: #ebeff2; overflow: hidden;">
+<div style=" margin: 0 8%; align-items: center; padding: 20px; background-color: #ebeff2; overflow: hidden;"  class="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
 <!-- Card 1: Deposit Balance -->
 <div style="background-color: #ffffff; border: 1px solid #e0e0e0; overflow: hidden; cursor: pointer; margin-right: 5px; width:33.3%;">
     <div style="padding: 15px; display: flex; align-items: center; text-align: left;">
