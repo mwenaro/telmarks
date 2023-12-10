@@ -33,10 +33,10 @@ $userName = isset($_SESSION['user_name']) ? $_SESSION['user_name'] : "";
     <link rel="stylesheet" href="side.css" />
     <style>
         .card-container {
-            /* display: flex;
+            display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 20px; */
+            padding: 20px;
             background-color: #ebeff2; /* Grey background */
             overflow: hidden;
         }
@@ -136,6 +136,10 @@ $userName = isset($_SESSION['user_name']) ? $_SESSION['user_name'] : "";
 @media (max-width: 576px) {
     .card-deck {
         margin-right: 0;
+    }
+
+    .card-container{
+        flex-direction:column;
     }
 }
 
