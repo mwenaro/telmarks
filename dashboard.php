@@ -673,19 +673,20 @@ echo '
 
 
 
-<div style="display: flex;  align-items: center; padding: 20px; background-color: #ebeff2; overflow: hidden;">
+<!-- Pictures -->
+<div style="  background-color: #ebeff2; overflow: hidden;" class="grid grid-cols-1 md:grid-cols-3 w-full p-8 gap-3">
     <!-- Card 5: Image Only -->
-    <div style="background-color: #ffffff; border: 1px solid #e0e0e0; border-radius: 8px; overflow: hidden; cursor: pointer; margin-right: 5px; width: 33.33%;">
+    <div style="background-color: #ffffff; border: 1px solid #e0e0e0; border-radius: 8px; overflow: hidden; cursor: pointer; margin-right: 5px; ">
         <img src="./logos/forexphoto.jpg" alt="Image 1" style="width: 100%; height: 250px; border-bottom: 1px solid #e0e0e0;">
     </div>
 
     <!-- Card 6: Image Only -->
-    <div style="background-color: #ffffff; border: 1px solid #e0e0e0; border-radius: 8px; overflow: hidden; cursor: pointer; margin-right: 5px; width: 33.33%;">
+    <div style="background-color: #ffffff; border: 1px solid #e0e0e0; border-radius: 8px; overflow: hidden; cursor: pointer; margin-right: 5px; ">
         <img src="./logos/piechartphoto.jpg" alt="Image 2" style="width: 100%; height: 250px; border-bottom: 1px solid #e0e0e0;">
     </div>
 
     <!-- Card 7: Image Only -->
-    <div style="background-color: #ffffff; border: 1px solid #e0e0e0; border-radius: 8px; overflow: hidden; cursor: pointer; margin-right: 5px; width: 33.33%;">
+    <div style="background-color: #ffffff; border: 1px solid #e0e0e0; border-radius: 8px; overflow: hidden; cursor: pointer; margin-right: 5px; ">
         <img src="./logos/stats.jpg" alt="Image 3" style="width: 100%; height: 250px; border-bottom: 1px solid #e0e0e0;">
     </div>
 </div>
