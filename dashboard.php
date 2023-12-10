@@ -348,7 +348,7 @@ $notifications = $stmt->fetchAll(PDO::FETCH_ASSOC);
 <!-- card-container flex flex-col md:flex-row justify-between items-center  mx-auto w-full flex-wrap -->
 <!-- w-full md:w-1/2 lg:w-1/4 -->
 <!-- tailwind csls -->
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4" style="margin-right:10%; padding:10px">
+<div class="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-between gap-4" style="margin-right:10%; padding:10px">
     <div class="card-links  h-24 bg-white rounded-lg flex justify-center items-center mb-4" style=" margin-right:5px;">
         <a href="./deposit.php">
             <div class="card-content">
