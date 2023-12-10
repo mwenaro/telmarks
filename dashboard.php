@@ -92,23 +92,23 @@ $userName = isset($_SESSION['user_name']) ? $_SESSION['user_name'] : "";
             <!-- Modal to display offer message -->
             <div id="offerModal" class="modal" style="display: none; text-align: center;">
                 <?php if (!empty($notifications)): ?>
-                        <div class="modal-dialog">
-                            <div class="modal-content" style="
+                            <div class="modal-dialog">
+                                <div class="modal-content" style="
                             background-color: #f36c33;
                             color: white;
                             margin: 20px;
                             padding: 10px;
                             position: relative;
                         ">
-                                <div class="modal-body">
-                                    <p><?php echo htmlspecialchars($notifications[0]['message']); ?></p>
-                                </div>
-                                <!-- Close icon -->
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" onclick="closeOfferModal()">Close</button>
+                                    <div class="modal-body">
+                                        <p><?php echo htmlspecialchars($notifications[0]['message']); ?></p>
+                                    </div>
+                                    <!-- Close icon -->
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" onclick="closeOfferModal()">Close</button>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
                 <?php endif; ?>
             </div>
 
@@ -118,7 +118,7 @@ $userName = isset($_SESSION['user_name']) ? $_SESSION['user_name'] : "";
                 <div class="bg-img" style="background-image: url(<?php echo empty($profileImage) ? $bgImage : 'none'; ?>); position: relative; hover{background-color:orange; cursor:pointer;}">
                     <img src="<?php echo empty($profileImage) ? 'default-image.jpg' : $profileImage; ?>" alt="Profile Image" style="width:40px; height:40px; border-radius: 50%;">
                     <?php if (empty($profileImage)): ?>
-                            <div class="abbreviation" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);"><?php echo $abbreviation; ?></div>
+                                <div class="abbreviation" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);"><?php echo $abbreviation; ?></div>
                     <?php endif; ?>
                 </div>
                                 
@@ -332,9 +332,9 @@ $notifications = $stmt->fetchAll(PDO::FETCH_ASSOC);
     position: relative;  /* Add position relative for absolute positioning */
 ">
     <?php foreach ($notifications as $notification): ?>
-            <p>
-                <?php echo htmlspecialchars($notification['message']); ?>
-            </p>
+                <p>
+                    <?php echo htmlspecialchars($notification['message']); ?>
+                </p>
     <?php endforeach; ?>
 
     <!-- Close icon -->
@@ -385,7 +385,7 @@ $notifications = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
 
 <div style="background-color: #ebeff2; overflow: hidden;"
-class="flex flex-col md:flex-row justify-center items-center p-20"
+class="flex flex-col md:flex-row justify-center items-center p-6"
 >
 
 <!-- Card 1: Bonus -->
@@ -522,7 +522,7 @@ echo '
 
 <!-- Card 3: Package -->
 <div style="background-color: #ffffff; border: 1px solid #e0e0e0; "  class="min-h-fit h-48 w-full md:w-1/2 lg:w-1/4 justify-between items-center p-3 md:p-5 flex-col gap-2 mt-3 md:mt-2">
-    <div style="" class="">
+<h3 style="margin: 0; color: black;" class="w-full px-6 py-1 my-2 text-2xl text-center font-bold">Package</h3>
 
         <!-- App Earnings Section -->
         <?php
@@ -568,39 +568,30 @@ echo '
         }
 
         // Display the div with the determined status and last package name
+        
         echo '
-        <div style="display: flex; align-items: flex-start; flex-grow: 1;">
-            <!-- Package Status -->
-            <div style="text-align: left;">
-                <h3 class="text-center" style="margin: 0; color: black; ">Package</h3>
-                <br>
-                <div style="display: flex; flex-direction: column; align-items: start;">
-                    <p style="margin: 0; font-size: 14px;">' . $status . ' | ' . $packageName . '</p> 
-                    <br>
-                    <p style="margin: 0;">25% Purchase</p> 
-                </div>
-            </div>
-        </div>';
+<div style="" class ="w-full flex justify-between px-4 py-1 gap-3">
+    <p style="margin: 0;">KES ' . $status . ' | ' . $packageName . '</p> 
+    <img src="./logos/all.png" alt="amount" style="width: 20px; height: 20px; margin-bottom: 5px;">
+   
+</div>
+<div style="" class ="w-full flex justify-between px-4 py-1 gap-3">
+<p style="margin: 0;">75%</p> 
+<img src="./logos/allpurchase.png" alt="amount" style="width: 20px; height: 20px;">
+    
+    
+</div> 
+    ';
+
         ?>
-
-
-
-        <!-- Icon Section -->
-        <div style="display: flex; align-items: end; flex-direction: column;">
-            <br> <br> 
-            <img src="./logos/all.png" alt="amount" style="width: 20px; height: 20px; margin-bottom: 5px;">
-            <br>
-            <img src="./logos/allpurchase.png" alt="amount" style="width: 20px; height: 20px;">
-        </div>
-
-    </div>
+  
 </div>
 
 
 
 <!-- Card 4: App Earnings -->
 <div style="background-color: #ffffff; border: 1px solid #e0e0e0; "  class="min-h-fit h-48 w-full md:w-1/2 lg:w-1/4 justify-between items-center p-3 md:p-5 flex-col gap-2 mt-3 md:mt-2">
-    <div style="padding: 15px; display: flex; align-items: center; text-align: center;">
+
 <?php
 // Start the session
 session_start();
@@ -651,28 +642,29 @@ if (isset($_SESSION['user_name'])) {
     // Close the mysqli connection
     $conn->close();
 }
-?>
 
-<div style="flex-grow: 1; text-align: center;">
-    <h3 style="margin: 0; color: black;">App Earnings</h3>
-    <br>
-    <div style="display: flex; flex-direction: column; align-items: start;">
-        <p style="margin: 0;">KES <?php echo $totalEarnings; ?></p>
-        <br>
-        <p style="margin: 0;">90%</p>
-    </div>
+echo '
+<h3 style="margin: 0; color: black;" class="w-full px-6 py-1 my-2 text-2xl text-center font-bold">App Earnings</h3>
+
+<div style="" class ="w-full flex justify-between px-4 py-1 gap-3">
+    <p style="margin: 0;">KES ' . $totalEarnings . '</p> 
+    <img src="./logos/earnings.png" alt="amount" style="width: 20px; height: 20px; margin-bottom: 5px;">
+   
 </div>
+<div style="" class ="w-full flex justify-between px-4 py-1 gap-3">
+<p style="margin: 0;">90%</p> 
+<img src="./logos/affiliateprogramicon.png" alt="amount" style="width: 20px; height: 20px;">
+    
+    
+</div> 
+';
+?>
+   
 
 
-     <!-- Icon Section -->
-        <div style="display: flex; align-items: end; flex-direction: column;">
-            <br> <br>
-            <img src="./logos/earnings.png" alt="amount" style="width: 20px; height: 20px; margin-bottom: 5px;">
-            <br>
-            <img src="./logos/affiliateprogramicon.png" alt="amount" style="width: 20px; height: 20px;">
-        </div>
 
-    </div>
+   
+  
 </div>
 
 
