@@ -391,7 +391,7 @@ class="flex flex-col md:flex-row justify-center items-center p-20"
 <!-- Card 1: Bonus -->
 <div style="background-color: #ffffff; border: 1px solid #e0e0e0; "  class=" h-48 w-full md:w-1/2 lg:w-1/4 justify-between items-center p-5 flex-col gap-10">
     
-    <h3 style="margin: 0; color: black;">Bonus</h3>
+    <h3 style="margin: 0; color: black;" class="w-full px-6 py-1 my-2 text-2xl text-center font-bold">Bonus</h3>
         <!-- App Earnings Section -->          
             
             
@@ -433,16 +433,16 @@ if (isset($_SESSION['user_name'])) {
 
 // Display the div with the total bonus amount
 echo '
-<div style="" class ="flex justify-between">
+<div style="" class ="w-full flex justify-between px-4 py-1 gap-3">
     <p style="margin: 0;">KES ' . $bonusAmount . '</p> 
     <img src="./logos/icon.png" alt="amount" style="width: 20px; height: 20px; margin-bottom: 5px;">
    
 </div>
-<div style="" class ="flex justify-between">
+<div style="" class ="w-full flex justify-between px-4 py-1 gap-3">
 <p style="margin: 0;">15%</p> 
     <img src="./logos/bonus.png" alt="amount" style="width: 20px; height: 20px;">
     
-    <p style="margin: 0;">15%</p> 
+    
 </div>
 
 ';
