@@ -526,8 +526,8 @@ echo '
 </div>
 
 <!-- Card 3: Package -->
-<div style="background-color: #ffffff; border: 1px solid #e0e0e0; overflow: hidden; cursor: pointer; margin-right: 5px; width:25%;">
-    <div style="padding: 15px; display: flex; align-items: center; text-align: center;">
+<div style="background-color: #ffffff; border: 1px solid #e0e0e0; overflow: hidden; cursor: pointer;" class=" flex md:flex-row justify-between items-center">
+    <div style="" class="">
 
         <!-- App Earnings Section -->
         <?php
