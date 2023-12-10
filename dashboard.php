@@ -461,7 +461,7 @@ $notifications = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
 <!-- tailwind csls -->
 <div class="card-container flex flex-col md:flex justify-between items-center" style="margin-right:10%; ">
-    <div class="card-links " style=" margin-right:5px;">
+    <div class="card-links w-full md:w-1/2 lg:w-1/4" style=" margin-right:5px;">
         <a href="./deposit.php">
             <div class="card-content">
                 <h3 style="text-decoration: none; color: black; display: block; text-align: center; font-size: 15px;">Deposits</h3>
@@ -469,7 +469,7 @@ $notifications = $stmt->fetchAll(PDO::FETCH_ASSOC);
         </a>
     </div>
 
-    <div class="card-links " style=" margin-right:5px;">
+    <div class="card-links w-full md:w-1/2 lg:w-1/4" style=" margin-right:5px;">
         <a href="./transfer.php">
             <div class="card-content">
                 <h3 style="text-decoration: none; color: black; display: block; text-align: center; font-size: 15px;">Finances</h3>
@@ -477,7 +477,7 @@ $notifications = $stmt->fetchAll(PDO::FETCH_ASSOC);
         </a>
     </div>
 
-    <div class="card-links " style=" margin-right:5px;">
+    <div class="card-links w-full md:w-1/2 lg:w-1/4" style=" margin-right:5px;">
         <a href="./package.php">
             <div class="card-content">
                 <h3 style="text-decoration: none; color: black; display: block; text-align: center; font-size: 15px;">Packages</h3>
@@ -485,7 +485,7 @@ $notifications = $stmt->fetchAll(PDO::FETCH_ASSOC);
         </a>
     </div>
     
-    <div class="card-links "  style=" margin-right:5px;">
+    <div class="card-links w-full md:w-1/2 lg:w-1/4"  style=" margin-right:5px;">
         <a href="./writing.php">
             <div class="card-content">
                 <h3 style="text-decoration: none; color: black; display: block; text-align: center; font-size: 15px;">Writing Packages</h3>
