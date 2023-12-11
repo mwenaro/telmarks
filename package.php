@@ -482,7 +482,7 @@ $conn->close();
                 </div>
             </div>
 
-<div id="content-wrapp" style="background: #fff; padding: 40px;">
+<div id="content-wrapp" style="background: #fff; padding: 10px;">
     <div class="show-entries">
         <span>Show Entries</span>
         <select id="show-entries">
