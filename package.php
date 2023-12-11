@@ -373,7 +373,7 @@ $conn->close();
     <!-- End vertical navbar -->
 
     <!-- Page content holder -->
-    <div class="page-content p-5" id="content">
+    <div class="page-content " id="content">
 
         <!-- Packages content -->
         <div class="section" id="package" style="margin-top: 30px;">
@@ -481,7 +481,7 @@ $conn->close();
                     <!-- Col ends here -->
                 </div>
             </div>
-            
+
 <div id="content-wrapp" style="background: #fff; padding: 40px;">
     <div class="show-entries">
         <span>Show Entries</span>
