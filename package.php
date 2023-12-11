@@ -481,6 +481,7 @@ $conn->close();
                     <!-- Col ends here -->
                 </div>
             </div>
+            
 <div id="content-wrapp" style="background: #fff; padding: 40px;">
     <div class="show-entries">
         <span>Show Entries</span>

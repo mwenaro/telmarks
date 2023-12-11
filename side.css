@@ -418,3 +418,10 @@ td.line {
   background: #ebeff2;
 }
 
+/* Media queries */
+@media screen and (max-width : 576px) {
+  .page-content {
+    width: calc(100%);
+  }
+  
+}

@@ -33,7 +33,8 @@ if ($_SERVER["REQUEST_METHOD"] == "GET" && isset($_GET['token'])) {
                     <link rel='stylesheet' href='login.css'>
                     <!-- Add your custom CSS if needed -->
                   <!--Add TAILWING CDN  -->
-    <script src="https://cdn.tailwindcss.com"></script>
+                  
+    <script src='https://cdn.tailwindcss.com'></script>
 </head>                <body>
 
                 <div class='container'>
