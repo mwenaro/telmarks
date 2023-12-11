@@ -386,7 +386,7 @@ $conn->close();
                 <div class=" grid grid-cols-1 md:grid-cols-3">
 
                     <!-- Card starts here -->
-                    <div class="col-12 col-sm-6 col-md-3 m-auto">
+                    <div class=" m-auto">
                         <!-- Card starts here -->
                         <div class="card shadow" id="gold-package">
                             <div class="card-body" style="text-align: center;">
@@ -414,7 +414,7 @@ $conn->close();
                         <!-- Card ends here -->
                     </div>
                     <!-- Card starts here -->
-                    <div class="col-12 col-sm-6 col-md-3 m-auto">
+                    <div class=" m-auto">
                         <!-- Card starts here -->
                         <div class="card shadow" id="gold-package">
                             <div class="card-body" style="text-align: center;">
@@ -448,7 +448,7 @@ $conn->close();
                     <!-- Card ends here -->
 
                     <!-- Col ends here -->
-                    <div class="col-12 col-sm-6 col-md-3 m-auto">
+                    <div class=" m-auto">
                         <!-- Card starts here -->
                         <div class="card shadow" id="gold-package">
                             <div class="card-body" style="text-align: center;">
