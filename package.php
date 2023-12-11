@@ -448,7 +448,7 @@ $conn->close();
                     <!-- Card ends here -->
 
                     <!-- Col ends here -->
-                    <div class="h-[560px] px-4 py-2 min-w-[200px] mx-2">
+                    <div class="h-[450px] px-4 py-2 min-w-[200px] mx-2">
                         <!-- Card starts here -->
                         <div class="card shadow w-full" id="gold-package">
                             <div class="w-full card-body" style="text-align: center;">
