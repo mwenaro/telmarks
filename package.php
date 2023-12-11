@@ -383,10 +383,10 @@ $conn->close();
                 <hr class="mx-auto mb-5 w-100%" />
                 <!-- row mb-5 -->
                 <!-- Tailwind starts here -->
-                <div class=" grid grid-cols-1 md:grid-cols-3">
+                <div class="w-full  grid grid-cols-1 md:grid-cols-3 gap-3 p-6 mx-auto">
 
                     <!-- Card starts here -->
-                    <div class=" m-auto">
+                    <div class="h-48 px-4 py-2">
                         <!-- Card starts here -->
                         <div class="card shadow" id="gold-package">
                             <div class="card-body" style="text-align: center;">
@@ -414,7 +414,7 @@ $conn->close();
                         <!-- Card ends here -->
                     </div>
                     <!-- Card starts here -->
-                    <div class=" m-auto">
+                    <div class="h-48 px-4 py-2">
                         <!-- Card starts here -->
                         <div class="card shadow" id="gold-package">
                             <div class="card-body" style="text-align: center;">
@@ -448,7 +448,7 @@ $conn->close();
                     <!-- Card ends here -->
 
                     <!-- Col ends here -->
-                    <div class=" m-auto">
+                    <div class="h-48 px-4 py-2">
                         <!-- Card starts here -->
                         <div class="card shadow" id="gold-package">
                             <div class="card-body" style="text-align: center;">
