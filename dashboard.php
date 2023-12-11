@@ -31,10 +31,11 @@ $userName = isset($_SESSION['user_name']) ? $_SESSION['user_name'] : "";
         href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
     <link rel="stylesheet" href="side.css" />
-    
+    <!--Add TAILWING CDN  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  <!--Add TAILWING CDN  -->
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-
 <body>
     
     <?php
@@ -1094,7 +1095,7 @@ displayUserInformation($conn, $user_name);
 ?>
 
 
-<div style=" ; align-items: center; padding: 20px; background-color: #ebeff2; overflow: hidden;"  class="w-full grid grid-cols-1 md:grid-cols-3 mx-6 ">
+<div style=" align-items: center; padding: 20px; background-color: #ebeff2; overflow: hidden;"  class="w-full grid grid-cols-1 md:grid-cols-3 mx-6 ">
 <!-- Card 1: Deposit Balance -->
 <div style="background-color: #ffffff; border: 1px solid #e0e0e0; overflow: hidden; cursor: pointer; margin-right: 5px;">
     <div style="padding: 15px; display: flex; align-items: center; text-align: left;">

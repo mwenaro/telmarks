@@ -11,8 +11,9 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.18.0/font/bootstrap-icons.css" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
     <link rel="stylesheet" href="side.css" />
+  <!--Add TAILWING CDN  -->
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-
 <body>
     <!-- Vertical navbar -->
         <div class="vertical-nav bg-white" id="sidebar">

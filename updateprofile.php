@@ -150,8 +150,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             width: 80%;
         }
     </style>
-  </head>
-  <body>
+    <!--Add TAILWING CDN  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>  <body>
     <header>
       <div class="header-content">
         <div class="notify-icon">

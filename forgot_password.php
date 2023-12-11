@@ -7,8 +7,9 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="login.css">
     <!-- Add your custom CSS if needed -->
-</head>
-<body>
+  <!--Add TAILWING CDN  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head><body>
 
 <div class="container">
     <div class="row justify-content-center mt-5">

@@ -188,8 +188,9 @@ $conn->close();
         href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
     <link rel="stylesheet" href="side.css" />
+  <!--Add TAILWING CDN  -->
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-
 <body>
     <header>
         <div class="header-content">
@@ -380,7 +381,9 @@ $conn->close();
                 <p style="font-weight: bold; line-height: 1.5;">Packages Available <br> Pricing</p>
 
                 <hr class="mx-auto mb-5 w-100%" />
-                <div class="row mb-5">
+                <!-- row mb-5 -->
+                <!-- Tailwind starts here -->
+                <div class=" grid grid-cols-1 md:grid-cols-3">
 
                     <!-- Card starts here -->
                     <div class="col-12 col-sm-6 col-md-3 m-auto">

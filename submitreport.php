@@ -120,8 +120,9 @@ $statusMsg = sendEmailAndDeleteFiles($toEmail, $fromName, $attachmentUploadDir, 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Submission Status</title>
-</head>
-<body>
+  <!--Add TAILWING CDN  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head><body>
     <div class="submission-status">
         <?php if (!empty($statusMsg)): ?>
             <div class="alert <?php echo $msgClass; ?>">

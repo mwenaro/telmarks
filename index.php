@@ -5,8 +5,9 @@
   <meta charset="UTF-8" />
   <title>TELMARK AGENCIES | LOGIN </title>
   <link rel="stylesheet" href="login.css" />
+  <!--Add TAILWING CDN  -->
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-
 <body>
   <div class="wrapper" style="background:#fff; width:70%; max-width:600px; height:max-height:600px; margin: 0 auto;">
     <div class="form-box login" id="login-form">

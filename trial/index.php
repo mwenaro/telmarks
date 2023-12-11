@@ -69,8 +69,9 @@
         border-radius: 15px;
       }
     </style>
-  </head>
-  <body oncontextmenu="return false" class="snippet-body">
+    <!--Add TAILWING CDN  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>  <body oncontextmenu="return false" class="snippet-body">
     <div class="container d-flex justify-content-center">
       <div class="card mt-5 px-3 py-4">
         <div class="d-flex flex-row justify-content-around">

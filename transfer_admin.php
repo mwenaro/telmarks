@@ -138,8 +138,9 @@ $conn->close();
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/js/select2.min.js"></script>
     <link rel="stylesheet" href="side.css" />
+  <!--Add TAILWING CDN  -->
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-
 <body>
     <!-- Vertical navbar -->
         <div class="vertical-nav bg-white" id="sidebar">

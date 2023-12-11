@@ -142,8 +142,9 @@
   }
 </style>
 
+  <!--Add TAILWING CDN  -->
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-
 <body>
     <div class="wrapper" style="background:#fff;">
         <div class="form-box register" id="register-form">

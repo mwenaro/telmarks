@@ -145,8 +145,9 @@ $userName = isset($_SESSION['user_name']) ? $_SESSION['user_name'] : "";
 
 
     </style>
+  <!--Add TAILWING CDN  -->
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-
 <body>
     
     <?php
