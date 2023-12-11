@@ -192,7 +192,7 @@ $conn->close();
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    <header>
+    <header class = "z-20">
         <div class="header-content">
             <div class="notify-icon">
                 <span class="las la-bell"></span>
