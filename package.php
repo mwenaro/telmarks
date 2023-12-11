@@ -383,13 +383,13 @@ $conn->close();
                 <hr class="mx-auto mb-5 w-100%" />
                 <!-- row mb-5 -->
                 <!-- Tailwind starts here -->
-                <div class="w-full  grid grid-cols-1 md:grid-cols-3 gap-3 p-6 mx-auto">
+                <div class="w-full  grid grid-cols-1 md:grid-cols-3 gap-3 p-6 mx-auto mb-6">
 
                     <!-- Card starts here -->
                     <div class="h-48 px-4 py-2">
                         <!-- Card starts here -->
                         <div class="card shadow w-full" id="gold-package">
-                            <div class="card-body" style="text-align: center;">
+                            <div class="w-full card-body" style="text-align: center;">
                                 <form id="purchaseForm">
                                     <p class="card-img-top" style="font-size: 24px;">
                                         <br>
@@ -417,7 +417,7 @@ $conn->close();
                     <div class="h-48 px-4 py-2">
                         <!-- Card starts here -->
                         <div class="card shadow w-full" id="gold-package">
-                            <div class="card-body" style="text-align: center;">
+                            <div class="w-full card-body" style="text-align: center;">
                                 <form id="purchaseForm">
                                         <p class="card-img-top" style="font-size: 24px;">
                                             
@@ -451,7 +451,7 @@ $conn->close();
                     <div class="h-48 px-4 py-2">
                         <!-- Card starts here -->
                         <div class="card shadow w-full" id="gold-package">
-                            <div class="card-body" style="text-align: center;">
+                            <div class="w-full card-body" style="text-align: center;">
                                 
                             <form id="purchaseForm">
                                 <p class="card-img-top" style="font-size: 24px;">
